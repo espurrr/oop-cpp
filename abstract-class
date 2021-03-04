@@ -21,7 +21,7 @@ class circle: public shape
     int r;
 public: 
     circle(int rad):r(rad){}
-	  void area() { cout << pow(r,2) << "\n"; } 
+	  void area() { cout << M_PI * pow(r,2) << "\n"; } 
 }; 
 
 int main(void) 
