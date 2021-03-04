@@ -1,0 +1,26 @@
+#include <iostream> 
+using namespace std; 
+
+// template 1
+template <typename T> 
+T findmin(T x, T y) 
+{ 
+return (x < y)? x: y; 
+} 
+
+// template 2
+template <typename T, typename U> 
+U add(T x, U y) 
+{ 
+return x + y; 
+} 
+
+int main() 
+{ 
+cout << findmin<int>(5, 34) << endl; // int
+cout << findmin<double>(329.0, 71.3) << endl; // double 
+cout << findmin<char>('a', 'z') << endl; // char 
+cout << add<int,float>(2,5.4);
+
+return 0; 
+}
